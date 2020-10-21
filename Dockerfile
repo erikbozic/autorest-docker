@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 LABEL maintainer="fearthecowboy" 
 
 # Required for install
-RUN apt-get update && apt-get install -y curl libunwind8 libicu60  
+RUN apt-get update && apt-get install -y curl libunwind8 libicu60 \
 # Copied from: https://github.com/dotnet/dotnet-docker/blob/master/src/runtime-deps/2.1/bionic/amd64/Dockerfile#L8 
 libc6 \
 libgcc1 \
